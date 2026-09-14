@@ -1,3 +1,4 @@
+import { goToBookingAndOpenChat } from "@/lib/claudde";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, CheckCircle2 } from "lucide-react";
@@ -49,7 +50,7 @@ export const Hero = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 text-lg h-14"
-            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={goToBookingAndOpenChat}
           >
             Book Your Clarity Consultation
           </Button>
@@ -57,7 +58,7 @@ export const Hero = () => {
             size="lg" 
             variant="outline" 
             className="border-foreground/30 text-foreground hover:bg-foreground/10 px-8 text-lg h-14"
-            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={goToBookingAndOpenChat}
           >
             See How Self-Concept Changes Results
           </Button>

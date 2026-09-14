@@ -1,3 +1,4 @@
+import { goToBookingAndOpenChat } from "@/lib/claudde";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, DollarSign, Sparkles } from "lucide-react";
@@ -64,7 +65,7 @@ export const UseCasesSection = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
-            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={goToBookingAndOpenChat}
           >
             Start with a Free 1:1
           </Button>
