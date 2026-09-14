@@ -1,3 +1,4 @@
+import { goToBookingAndOpenChat } from "@/lib/claudde";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
@@ -52,7 +53,7 @@ export const ProblemSection = () => {
               </ul>
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
-                onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={goToBookingAndOpenChat}
               >
                 Book Your Clarity Consultation
               </Button>
